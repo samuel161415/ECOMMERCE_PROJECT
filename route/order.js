@@ -86,7 +86,7 @@ router.put('/:id',verifyTokenAndAdmin,async(req,res)=>{
               try{
                 const income=await Order.aggregate([
                     {$match:{
-                     createdAt:{$gte:prevMonth},...(productId&&{products:{$elemMatch:{productId}}})}},
+                     createdAt:{$gte:prevMonth},...(productId&&{products:{ $elemMatch:{productId}}})}},
                     {
                         $project:{
                         month:{$month:"$createdAt"},
