@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "../.."
+		},
+		{
+			"path": "../../../ReactProjects/Ecommerce"
+		},
+		{
+			"path": "../../../InflowProject/inflow"
 		}
 	]
 }
