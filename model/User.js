@@ -1,7 +1,15 @@
 const mongoose=require('mongoose')
 
 const UserSchema=new mongoose.Schema({
+    firstName:{
+        type:String,
+       
 
+    },
+    lastName:{
+        type:String,
+       
+    },
     username:{
         type:String,
         required:true,
@@ -17,7 +25,7 @@ const UserSchema=new mongoose.Schema({
         },
     isAdmin:{
         type:Boolean,
-        default:false,
+        default:true,
     },    
 }, {
     timestamps:true
